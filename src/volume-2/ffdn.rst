@@ -143,7 +143,7 @@ qui a gardé ce modèle depuis.
 n’avaient pas lieu d’être. Quand on était FAI, on reliait des gens à
 Internet, et c’est tout. Aujourd’hui, les gros FAIs ont la fâcheuse
 tendance à être de grosses sociétés ayant des intérêts de grosses
-societés, mais pas seulement : Par exemple, SFR, pour ne citer que
+societés, mais pas seulement : par exemple, SFR, pour ne citer que
 lui, appartient à Vivendi, spécialisé dans la distribution de
 contenu. Naturellement, on comprendra qu’ils ont un intérêt
 particulier à ce que leurs clients consomment leurs propres contenus,

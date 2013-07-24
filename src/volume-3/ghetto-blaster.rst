@@ -73,12 +73,11 @@ Après deux points de soudures pour relier du fil éléctrique
 entre les enceintes et l'ampli, j'ai pu essayer le son avec
 un lecteur mp3.
 
-Le choc. *un son excellent, dépassant de loin la qualité
-de mes enceintes de salon*. La valise vombrie avec les
-basses et les rend bien, sans aucune vibration parasite.
+Le choc. *Un son excellent, dépassant de loin la qualité
+de mes enceintes de salon*. La valise vrombie en arrondissant les basses. Et aucune vibration parasite !
 
 J'ai fais des essais en rembourrant la valise avec de
-l'isolant, mais c'est moins bien - ca étouffe le son et
+l'isolant, mais c'est moins bien- ça étouffe le son et
 tue les basses.
 
 
@@ -86,16 +85,16 @@ Alimentation
 ------------
 
 Avoir une alimentation stable & portative était le gros challenge
-de ce projet: comment faire pour fournir les 12v que
+de ce projet : comment faire pour fournir les 12v que
 l'amplificateur requiert, ainsi que les 5v pour le Raspberry ?
 
-Au début j'ai pensé à équiper la valise d'une `batterie au plomb
+Au début j'ai pensé équiper la valise d'une `batterie au plomb
 <https://fr.wikipedia.org/wiki/Batterie_au_plomb>`_
-qui est similaire à celles qui équipent les voitures, mais
-j'ai très vite déchanté sur le prix et le poids - et aussi
+similaire à celles qui équipent les voitures, mais
+j'ai très vite déchanté sur le prix et le poids- et aussi
 le coté pas très écologique.
 
-J'ai ensuite pensé à monter moi-même un train de 4 batteries
+J'ai ensuite pensé monter moi-même un train de 4 batteries
 Li-Po 3.6v, mais ce genre de montage est assez technique car
 il faut s'assurer que toutes les batteries sont toujours
 chargées au même niveau et aussi ne jamais descendre en
@@ -104,7 +103,7 @@ dessous d'une certaine charge. Et puis bon, c'est
 
 Grâce à Jonathan j'ai finalement trouvé une Li-Po de 12v et
 6.8A sur AliBaba très compacte et légère. Guère plus grosse que
-celle que l'on trouve dans les avions ou voitures radio-commandé,
+celle que l'on trouve dans les avions ou voitures radio-commandés,
 avec toutes les protections nécessaires.
 
 .. figure:: ghetto/batterie.jpg
@@ -143,7 +142,7 @@ Le montage, expliqué ci-dessous, est très simple: le régulateur
 reçoit les 12 volts sur une patte et renvoie 5v sur l'autre.
 La troisième patte est la masse. Attention, bien
 lire le `datasheet <http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf>`_
-pour ne pas se tromper de pattes - elles sont différentes
+pour ne pas se tromper de pattes- elles sont différentes
 en fonction des modèles.
 
 .. figure:: ghetto/Voltage-Regulator.png
@@ -151,19 +150,19 @@ en fonction des modèles.
 
    Schéma du circuit de régulation de tension.
 
-De chaque côté du montage il y a deux condensateurs,
+De chaque côté du montage il y a deux condensateurs
 qui stabilisent le circuit. Si vous montez des condensateurs
-céramiques, attention au sens: ils sont polarisés.
+céramiques, attention au sens : ils sont polarisés.
 
-Enfin, une LED est placé sur la partie 5v, avec une petite
+Enfin, une LED est placée sur la partie 5v, avec une petite
 résistance, histoire de montrer que le circuit tourne.
 
 En utilisation, le régulateur chauffe beaucoup puisqu'il dissipe
 l'excès de tension, et il peut être équipé d'un petit radiateur
-à visser - j'en ai récupéré un sur une vieille plaque électronique
+à visser- j'en ai récupéré un sur une vieille plaque électronique
 pour ce montage.
 
-Après quelques soudures, un magnifique régulateur de tension!
+Après quelques soudures, un magnifique régulateur de tension !
 
 .. figure:: ghetto/ghetto8.jpg
 
@@ -177,7 +176,7 @@ Les deux évolutions possibles pour la partie alimentation sont:
 
 - un afficheur de charge restante, qui peut être réalisé avec
   un chip `LM3914 <http://www.ti.com/lit/ds/symlink/lm3914.pdf>`_
-  qui est capable de gérer jusqu'à 10 LEDs, et ce
+  qui est capable de gérer jusqu'à 10 LEDs comme ce
   `joli afficheur 10 leds <http://uk.rs-online.com/web/p/led-displays/2465689/>`_.
 
 - Un bouton pour éteindre le système sans arrêter brutalement
@@ -253,14 +252,14 @@ j'ai déployé le logiciel `Mopidy <https://docs.mopidy.com>`_ comme suis:
     sudo apt-get install mopidy
 
 Mopidy est un serveur de musique qui permet de jouer de la musique de
-plusieurs sources différentes: fichiers sur le disque, radios internet,
+plusieurs sources différentes : fichiers sur le disque, radios internet,
 tout type de stream compatible.
 
 Mopidy se base sur un `serveur MPD <http://doc.ubuntu-fr.org/mpd>`_
 (Music Player Daemon) et est compatible avec tous les clients MPD du
-marché - Il y en a pour Android, Linux, Mac OS X, Windows.
+marché- Il y en a pour Android, Linux, Mac OS X et Windows.
 
-En d'autre termes, la valise pourra être pilotée via un téléphone
+En d'autres termes, la valise pourra être pilotée via un téléphone, 
 une tablette ou un laptop !
 
 J'ai installé l'extension `Mopidy-Spotify <https://mopidy.readthedocs.org/en/latest/ext/spotify.html>`_
